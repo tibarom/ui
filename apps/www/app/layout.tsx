@@ -11,9 +11,6 @@ import { ThemeSwitcher } from "@/components/theme-switcher"
 import { Toaster as DefaultToaster } from "@/registry/default/ui/toaster"
 import { Toaster as NewYorkSonner } from "@/registry/new-york/ui/sonner"
 import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster"
-
-import { SpaceBackground } from "@/components/spaceBackground"
-import StarFieldAnimation from "@/components/background"
 import RisingStars from "@/components/risingStars"
 
 export const metadata: Metadata = {
@@ -90,7 +87,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontSans.variable
           )}
         >
-
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -99,10 +95,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           >
             <div vaul-drawer-wrapper="">
               <RisingStars/>
-              {/* <StarFieldAnimation/> */}
-              {/* <div className="fixed top-0 left-0 -z-10  relative flex min-h-screen flex-col bg-background z-50"> */}
                 {children}
-              {/* </div> */}
             </div>
             <TailwindIndicator />
             <ThemeSwitcher />

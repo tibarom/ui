@@ -10,7 +10,23 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { buttonVariants } from "@/registry/new-york/ui/button"
 import WalletLogin from "@/components/walletLogin"
 
+import DeployButton from "@/components/auth/supabase/DeployButton";
+import AuthButton from "@/components/auth/AuthButton";
+import { createClient } from "@/utils/supabase/server";
+
 export function SiteHeader() {
+  const canInitSupabaseClient = () => {
+    // This function is just for the interactive tutorial.
+    // Feel free to remove it once you have Supabase connected.
+    try {
+      createClient();
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
+
+  const isSupabaseConnected = canInitSupabaseClient();
   return (
     // <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <header className="sticky top-0 left-0 z-50 h-24 w-full bg-dither mb-12">
@@ -22,7 +38,7 @@ export function SiteHeader() {
             <CommandMenu/>
           </div>
           <ModeToggle/>
-          {/* <WalletLogin/> */}
+          {isSupabaseConnected && <AuthButton />}
         </div>
       </div>
     </header>

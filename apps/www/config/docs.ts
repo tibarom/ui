@@ -27,6 +27,10 @@ export const docsConfig: DocsConfig = {
       title: "Blocks",
       href: "/blocks",
     },
+    {
+      title: "Login",
+      href: "/login",
+    },
   ],
   sidebarNav: [
     {
