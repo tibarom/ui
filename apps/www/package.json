@@ -53,6 +53,8 @@
     "@tanstack/react-table": "^8.9.1",
     "@vercel/analytics": "^1.2.2",
     "@vercel/og": "^0.0.21",
+    "@wavesurfer/react": "^1.0.5",
+    "@web3modal/wagmi": "3.5.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "cmdk": "^0.2.0",
@@ -74,6 +76,7 @@
     "react-day-picker": "^8.7.1",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.44.2",
+    "react-modern-audio-player": "1.4.0-rc.2",
     "react-resizable-panels": "^0.0.55",
     "react-wrap-balancer": "^0.4.1",
     "recharts": "^2.6.2",
@@ -83,6 +86,9 @@
     "tailwind-merge": "^1.12.0",
     "ts-morph": "^22.0.0",
     "vaul": "^0.9.0",
+    "viem": "1.0.0",
+    "wagmi": "1.4.12",
+    "wavesurfer.js": "^7.7.13",
     "zod": "^3.21.4"
   },
   "devDependencies": {

@@ -9,7 +9,7 @@ import { ScrollArea, ScrollBar } from "@/registry/new-york/ui/scroll-area"
 
 const examples = [
   {
-    name: "Mail",
+    name: "SoundPost",
     href: "/examples/mail",
     code: "https://github.com/shadcn/ui/tree/main/apps/www/app/(app)/examples/mail",
   },

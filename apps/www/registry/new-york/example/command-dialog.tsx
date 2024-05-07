@@ -71,7 +71,7 @@ export default function CommandDialogDemo() {
             </CommandItem>
             <CommandItem>
               <EnvelopeClosedIcon className="mr-2 h-4 w-4" />
-              <span>Mail</span>
+              <span>SoundPost</span>
               <CommandShortcut>⌘B</CommandShortcut>
             </CommandItem>
             <CommandItem>

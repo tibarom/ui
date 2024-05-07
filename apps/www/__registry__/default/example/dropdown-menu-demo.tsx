@@ -5,7 +5,7 @@ import {
   Keyboard,
   LifeBuoy,
   LogOut,
-  Mail,
+  SoundPost,
   MessageSquare,
   Plus,
   PlusCircle,
@@ -76,7 +76,7 @@ export default function DropdownMenuDemo() {
             <DropdownMenuPortal>
               <DropdownMenuSubContent>
                 <DropdownMenuItem>
-                  <Mail className="mr-2 h-4 w-4" />
+                  <SoundPost className="mr-2 h-4 w-4" />
                   <span>Email</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>

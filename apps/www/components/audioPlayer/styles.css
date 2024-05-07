@@ -1,0 +1,6 @@
+.waveform-container {
+    position: relative;
+    height: 20px; /* 실제 보여줄 웨이브폼 높이의 절반 */
+    overflow: hidden;
+  }
+  
